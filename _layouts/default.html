@@ -3,53 +3,61 @@
 
 <head>
   <meta charset="utf-8">
-  <title> weds
+  <title> vinodh weds valli
   </title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet" </head>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.js"></script>
   <style>
     .center-div {
       margin: 0 auto;
       width: 100px;
     }
-
+    .section {    text-align: center;}
+    
     p {
-      font-family: 'Alex Brush', cursive;
+      font-family: brusher;
       color: #2b90a3;
     }
   </style>
 
-  <body style="
-    background-color: black;
+  </head><body style="
+    /* background-color: black; */
 ">
-
+<div id="pagepiling">
+  <div class="section" style=" background-color: white;">
+<div  >
     <p class="text-center" style="
+        
+                background-color: white;
+
         font-size: 50px;
-        margin-top: 50px;
+        
     ">I asked her and she said yes, we are getting married !!!</p>
+</div>
+  </div>
+  <div class="section" style=" background-color: white;" >
 
-
-    <div style="
-    width: 850px;
-    height: 567px;
-    margin-top: 50px;
-" class="center-div">
-      
-
-      <img src="image.jpeg" alt="Smiley face" height="42" width="42" style="
+    <img src="./invitation_files/image.jpeg" style="
     width:  850px;
     height: 567px;
 ">
-      <p class="text-center" style="
-        font-size: 50px;
-        margin-top: 50px;
-    ">at</p>
-      <iframe width="846" height="450" frameborder="0" style="border:0 ;margin-top: 50px;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA76al9mwGDdug2WRHZZjaDw5BnT5GjzxA&#10;    &amp;q=Space+Needle,Seattle+WA" allowfullscreen="">
-</iframe>
-    </div>
 
-  </body>
 
-</html>
+</div>
+  <div class="section" style=" background-color: white;"><iframe width="846" height="450" frameborder="0" style="border:0 ;margin-top: 50px;" src="./invitation_files/place.html" allowfullscreen="">
+</iframe></div>
+</div>
+<script type="text/javascript">
+  
+  $(document).ready(function() {
+  $('#pagepiling').pagepiling();
+});
+</script>
+    
+
+  </body></html>
